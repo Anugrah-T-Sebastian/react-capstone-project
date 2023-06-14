@@ -18,8 +18,8 @@ const BookingForm = ({ navigate }) => {
     submitHandler,
   } = useForm();
 
-  function handleSubmit() {
-    const response = submitHandler();
+  function handleSubmit(e) {
+    const response = submitHandler(e);
     return response ? navigate("/booking-confirmation") : null;
   }
 
