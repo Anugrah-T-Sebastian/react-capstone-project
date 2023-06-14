@@ -27,6 +27,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/booking" element={<Booking />} />
+        <Route
+          path="/booking-confirmation"
+          element={<BookingConfirmation {...formProps} />}
+        />
       </Routes>
       <Footer />
     </BrowserRouter>
